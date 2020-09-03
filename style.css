@@ -1,7 +1,8 @@
 html {
   scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
 }
-
 /* Start Navbar Styling */
 .navbar {
   line-height: 2rem;
@@ -9,11 +10,12 @@ html {
   transition: .5s;
 }
 .menuButtons {
-  font-family: 'Big Shoulders Text', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
   padding-left: 2rem!important;
   letter-spacing: .2rem;
   font-weight: 500;
+  color: white!important;
 }
 @media screen and (max-width: 767px) {
   .menuButtons {
@@ -153,8 +155,8 @@ header .overlay {
   letter-spacing: 2rem;
   }
 #draenor {
-  font-size: 1.3rem;
-  font-family: 'Big Shoulders Text', sans-serif;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: .4rem;
 }
 @media screen and (max-width: 767px) {
@@ -164,16 +166,16 @@ header .overlay {
   .display-3 {
     margin-top: -21rem;
     visibility: visible;
-    font-family: 'Buenard', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: black;
     transition: .8s;
     transition-delay: 1s;
-    letter-spacing: 2rem;
+    letter-spacing: 1.8rem;
   }
   #draenor {
   font-size: 1.5rem;
-  font-family: 'Big Shoulders Text', sans-serif;
-  letter-spacing: .5rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .3rem;
   padding-top: 1rem;
 }
   
@@ -194,11 +196,11 @@ display: none;
 
 .display-3 {
     position: relative;
-    font-family: 'Big Shoulders Text', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: calc(20px + 5vw);
     font-weight: 500;
     color: white!important;
-    letter-spacing: 0.02em;
+    letter-spacing: .1rem;
     user-select: none;
     filter: blur(0.007em);
     animation: shake 10s linear forwards;
@@ -261,20 +263,23 @@ h1::after {
 
 /* Start About Us Section */ 
 .jumbotron {
-  background-color: white!important;
+  background-color: black!important;
+  color: white;
 }
 .aboutUs {
-  font-family: 'Buenard', sans-serif;
-  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
   padding-bottom: 2rem;
   letter-spacing: .2rem;
+  text-align: justify;
 }
 .aboutUsText {
-  font-family: 'Buenard', sans-serif;
-  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem!important;
+  text-align: justify;
 }
 .jumbotron h1 {
-  font-family: 'Buenard', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: .1rem;
 }
 @media screen and (min-width: 767px) {
@@ -289,6 +294,13 @@ h1::after {
 /* End About Us Section */
 
 /* Card Animation */
+
+#leadership {
+  background-color: black;
+  margin-top: -4rem;
+  color: white;
+  font-size: 2.2rem;
+}
 .cardContainer {
   position: relative;
   width: 100%;
@@ -297,7 +309,9 @@ h1::after {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-family: 'Big Shoulders Text', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  margin-top: -1rem;
 }
 .cardContainer .card {
   position: relative;
@@ -306,6 +320,7 @@ h1::after {
   border-radius: 50px;
   overflow: hidden;
   transition: .7s;
+  background-color: black;
 }
 
 .cardContainer:hover .card {
@@ -336,7 +351,7 @@ h1::after {
   position: absolute;
   bottom: 10px;
   text-align: center;
-  font-family: 'Buenard', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 1.2rem;
 }
@@ -345,15 +360,15 @@ h1::after {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  background: linear-gradient(0deg, rgba(170,0,21,1) 6%, rgba(0,0,0,1) 55%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(70deg, rgba(3,0,0,1) 7%, rgba(92,6,6,1) 74%, rgba(117,0,0,1) 100%);
   text-decoration: none;
   margin-top: -9px;
   text-align: justify;
 }
 .cardPics {
-  width: 250px;
-  height: 260px;
-  border-radius: 50%;
+  width: 255px;
+  height: 270px;
+  border-radius: 10%;
   margin-top: 1rem;
 }
 h6 {
@@ -381,18 +396,27 @@ h6 {
 
 /* Start Rules Section */
 .rules {
-  font-family: 'Rasa', sans-serif;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
   padding-top: 2rem;
   text-align: justify;
+  color: white;
+}
+.firstRow {
+  font-size: 1.1rem;
+  text-align: justify;
 }
 .secondRow {
   padding-top: 5rem!important;
+  font-size: 1.1rem;
+  text-align: justify;
 }
 .thirdRow a {
-  text-decoration: underline;;
-  color: black
+  text-decoration: underline;
+  color: white;
+  text-underline-position: under;
 }
 @media screen and (min-width: 767px) {
   .rules {
@@ -403,9 +427,8 @@ h6 {
 }
 }
 /* End Rules Section */
-/* Start Classes Section */
 
-/* End Classes Section */
+
 
 /* Start FAQ */
 #faq {
@@ -413,8 +436,8 @@ h6 {
 }
 .col-lg-12 {
   padding-top: 2rem;
-  font-family: 'Buenard', sans-serif;
-  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem!important;
 }
 @media screen and (min-width: 767px) {
   .col-lg-12 {
@@ -426,9 +449,12 @@ h6 {
 
 /* Start Footer */ 
 footer {
-  font-family: 'Buenard', sans-serif;
-  font-size: 1.2rem;
-  color: black!important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  color: white;
+  background-color: black;
+  margin-top: -2rem;
+  line-height: 3.6rem;
 }
 .disc {
   color: #99aab5;
@@ -445,9 +471,9 @@ footer {
   color: #99aab5;
 }
 #willow {
-  color: black;
+  color: white;
   text-decoration: underline;
-  font-size: 1.2rem;
+  font-size: .9rem;
   transition: .1s ease-out;
   display: inline-block;
   margin-left: .2rem;
